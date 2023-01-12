@@ -1,5 +1,5 @@
 # IOT-Based-Precision-Agriculture
-A 2 month Microprocessor Project 
+A 2 month Microprocessor Course Project (Autumn 2022)
 
 ## Project Showcase Video
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/Lt4quiaEBFU/0.jpg)](https://youtu.be/Lt4quiaEBFU)
