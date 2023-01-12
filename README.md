@@ -7,7 +7,7 @@
 ## Features
 - Monitoring pH, Nutrient and Air Temp, Humidity, Light Intensity over the Cloud (Complete)
 - Setting The Configuration of the Greenhouse and hydroponics system over the Cloud (Complete)
-- Nice UI to control Configuration (Untouched)
+- Nice UI to monitor Sensors and control Configuration (Untouched)
 - System Regularly updates cofiguration from Cloud. (Complete)
 - System Tries to Maintain:
     - Air Temp, Water Temp, Humidty, (Complete)
