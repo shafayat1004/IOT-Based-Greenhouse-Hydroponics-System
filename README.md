@@ -1,5 +1,5 @@
 # IOT-Based-Precision-Agriculture
-
+A 2 month Microprocessor Project 
 
 ## Project Showcase Video
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/Lt4quiaEBFU/0.jpg)](https://youtu.be/Lt4quiaEBFU)
@@ -15,6 +15,7 @@
     - pH (Untouched)
 
 
+## Contribtors
 Coding And Hardware Design:  Mir Shafayat Ahmed.\
 Project Hardware Setup: Mir Shafayat Ahmed, Zannat Chowdhury.\
 Project Paper First Author: Zannat Chowdhury.
