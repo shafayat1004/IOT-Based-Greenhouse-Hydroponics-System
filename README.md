@@ -15,6 +15,6 @@
     - pH (Untouched)
 
 
-Coding And Hardware Design:  Mir Shafayat Ahmed.
-Project Hardware Setup: Mir Shafayat Ahmed, Zannat Chowdhury.
+Coding And Hardware Design:  Mir Shafayat Ahmed.\
+Project Hardware Setup: Mir Shafayat Ahmed, Zannat Chowdhury.\
 Project Paper First Author: Zannat Chowdhury.
