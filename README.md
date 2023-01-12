@@ -1,4 +1,4 @@
-# IOT-Based-Precision-Agriculture
+# IOT-Based Greenhouse Hydroponics System
 A 2 month Microprocessor Course Project (Autumn 2022)
 
 ## Project Showcase Video
