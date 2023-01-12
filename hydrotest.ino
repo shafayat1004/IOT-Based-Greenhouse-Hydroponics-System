@@ -1,20 +1,22 @@
 #include <Greenhouse.h>
+#include <Wire.h>
+#include <ArduinoJson.h>
 
 
 // Outputs ###########################################
 
 // Relay Module 1 DC
-#define NUTRIENT_PUMP_PIN 13
-#define FAN_PIN 12
+#define NUTRIENT_PUMP_PIN 11
+#define FAN_PIN 10
 
 // Relay Module 2 AC
-#define NUTRIENT_HEATER_PIN 8
-#define AIR_PUMP_PIN 9
-#define LIGHT_BULB_PIN 10
+#define NUTRIENT_HEATER_PIN 12
+#define LIGHT_BULB_PIN 13
+#define AIR_PUMP_PIN 22
 
-#define VENT1_SERVO_PIN 3
-#define VENT2_SERVO_PIN 4
-#define HUMIDIFIFER_SERVO_PIN 5
+#define VENT1_SERVO_PIN 3  //90 is on
+#define VENT2_SERVO_PIN 2  // 0 is on
+#define HUMIDIFIFER_SERVO_PIN 4
 
 
 // Inputs ###########################################
@@ -23,10 +25,17 @@
 #define PH_PIN A0
 #define LIGHT_SENSOR_I2C 0x23
 
+// ESP is in Serial3 [RX3, TX3]
+
+
+
+
 Greenhouse house;
 
 void setup() {
-    Serial.begin(9600);
+    Serial.begin(115200);
+    Serial3.begin(4800);
+
     house.updatePINS(
              NUTRIENT_PUMP_PIN,     FAN_PIN,
              NUTRIENT_HEATER_PIN,   AIR_PUMP_PIN,
@@ -35,32 +44,24 @@ void setup() {
              DHT_PIN,               WATER_TEMP_PIN,
              PH_PIN,                LIGHT_SENSOR_I2C);
     house.setup();
+    // house.testAllSystems();
 }
 void loop() {
-    house.refreshSensorData();
-    Serial.println("pH :");
-    Serial.println(house.getPH());
-    Serial.println("Air Temp :");
-    Serial.println(house.getAirTemp());
-    Serial.println("Humidity :");
-    Serial.println(house.getHumidity());
-    Serial.println("Water Temp :");
-    Serial.println(house.getWaterTemp());
-    Serial.println("Light Intensity (lux) :");
-    Serial.println(house.getLightIntensity());
-    house.humidifierControl(5);
+    // house.printTime(Serial3);
+    // house.getSunsetSunrise();
+    // house.printSunsetSunrise();
+    
+    // house.setCurrentConfig(Serial3);
+    // house.printCurrentConfig();
+    // house.refreshSensorData();
+    // house.printSensorData();
+    // house.uploadSensorData(Serial3);
+    // house.waterPumpControl(1);
+    // delay(5000);
+    // house.waterPumpControl(0);
+    // house.maintainConfig(10000,0,0.3);
     house.ventControl(0, 0);
-    delay(1000);
-    house.ventControl(0, 1);
-    delay(1000);
-    house.ventControl(1, 0);
-    delay(1000);
-    house.ventControl(1, 1);
-    delay(2000);
-    house.waterPumpControl(1);
-    house.fanControl(0);
-    delay(2000);
-    house.waterPumpControl(0);
-    house.fanControl(1);
-    delay(2000);
+    
+    delay(5000);
+    
 }
