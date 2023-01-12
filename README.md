@@ -13,3 +13,8 @@
     - Air Temp, Water Temp, Humidty, (Complete)
     - Light Intensity, nutrient cycle (Partialy Complete)
     - pH (Untouched)
+
+
+Coding And Hardware Design:  Mir Shafayat Ahmed.
+Project Hardware Setup: Mir Shafayat Ahmed, Zannat Chowdhury.
+Project Paper First Author: Zannat Chowdhury.
