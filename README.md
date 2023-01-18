@@ -1,8 +1,11 @@
 # IOT-Based Greenhouse Hydroponics System
 A 2 month Microprocessor Course Project (Autumn 2022)
 
-## Project Showcase Video
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/Lt4quiaEBFU/0.jpg)](https://youtu.be/Lt4quiaEBFU)
+## Project Showcase
+[![Project Showcase YouTube Link](https://img.youtube.com/vi/Lt4quiaEBFU/0.jpg)](https://youtu.be/Lt4quiaEBFU)
+![System Block Diagram](/images/hydroponics_blockdiagram.png)
+![System Flowchart](/images/hydroponics_flowchart.png)
+
 
 ## Features
 - Monitoring pH, Nutrient and Air Temp, Humidity, Light Intensity over the Cloud (Complete)
